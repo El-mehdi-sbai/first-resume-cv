@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles/styles.css">
+    <link rel="icon" href="assets/img/favicons/favicon.ico" type="image/png">
+    <title>Mehdi SBAI | Portfolio</title>
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("5KT0zAJlM9_2vIOW1");
+   })();
+</script>
+</head>
+<body>
+    <header class="header">
+       <h1 class="first_name">Mehdi</h1>
+       <div class="rounded_box">
+        <div class="profile_picture"></div>
+       </div>
+    </header>
+
+    <main class="main">
+        <div class="description">
+            Passionné par la programmation, j'adore passé du temps à apprendre de nouveaux langages et de nouvelles fonctionnalités pendant mon temps libre. <br> Je prépare actuellement mon entrée en formation chez Diginamic à Pérols afin d'acquérir les compétences nécessaires pour être développeur web et mobile. <br> Je souhaite enter dans cette formation pour avoir une structure autour de moi et ainsi avoir toutes les clés en main pour m'organiser. <br> Je continue de m'autoformer et je maintien une veille technologique.
+        </div>
+        <div class="socials">
+            <a href="https://github.com/Mehdi-Sbai" target="_blank" class="github">
+                <img src="/assets/icons/github.png" alt="github icon">
+                Github
+            </a>
+            <a href="https://www.linkedin.com/in/mehdi-sbai-9b1245242/" target="_blank" class="linkedin">
+                <img src="/assets/icons/linkedin.png" alt="linkedin icon">
+                LinkedIn
+            </a>
+        </div>
+        <div class="resume">
+            <a class="cv" href="assets/CV/ElMehdiSbaiCV.pdf" download rel="noopener noreferrer" target="_blank">
+                Télécharger mon CV
+             </a>
+        </div>
+        <div class="contact_me">
+            <div class="email">
+                <h2 class="contactMeText">Contactez moi !</h2>
+                <input type="text" id="fromName" placeholder="Nom">
+                <input type="text" id="fromEmail" placeholder="Email">
+                <input type="text" id="message" placeholder="Message">
+                <button onclick="sendMail()">Envoyer</button>
+                <span id="msg_success">Message envoyé avec succès !</span>
+            </div>
+            <div class="whatsapp"></div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

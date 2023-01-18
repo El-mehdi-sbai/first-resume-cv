@@ -1,0 +1,165 @@
+@font-face {
+    font-family: "alba";
+    src: url("/assets/fonts/alba.ttf")
+}
+@font-face {
+    font-family: "poppins";
+    src: url("/assets/fonts/poppins.ttf")
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: "poppins";
+}
+
+.header {
+    background: #1F4FFF;
+    height: 250px;
+    border: 10px solid #aabcfb;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    position: relative;
+}
+
+.first_name{
+    color: white;
+    font-family: "alba";
+    font-size: 3rem;
+    letter-spacing: 2px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.rounded_box{
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    position: absolute;
+    border: 10px solid #aabcfb;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -40%;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(31,79,255,1) 100%);
+}
+.profile_picture{
+    background-image: url("/assets/img/mehdi.png");
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: 115%;
+    border-radius: 50%;
+}
+
+.main{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 64, 255, 0.3) 0px 3px 7px -3px;
+    margin: 150px 50px 50px 50px;
+    padding: 50px;
+    border-radius: 15px;
+}
+
+.description{
+    text-align: center;
+}
+a{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    text-decoration: none;
+    color: #333;
+    vertical-align: baseline;
+    padding: 5px 10px 5px 20px;
+    border-radius: 25px;
+    transition: .3s;
+}
+a:hover{
+    background: #aabcfb;
+    transition: .3s;
+}
+
+.socials{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 150px;
+}
+
+img{
+    position: relative;
+    top: 4px;
+    right: 10px;
+    width: 25%;
+}
+
+.resume{
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+}
+
+.email{
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 25px;
+    padding-bottom: 50px;
+    position: relative;
+}
+
+input{
+    margin: 10px;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #aabcfb;
+    border-radius: 25px;
+}
+
+button{
+    position: absolute;
+    bottom: 7px;
+    right: 40px;
+    border-radius: 25px;
+    padding: 10px;
+    width: 19%;
+    background: transparent;
+    border: 1px solid #aabcfb;
+    transition: .3s;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #aabcfb;
+    transition: .3s;
+}
+
+#msg_success{
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .socials {
+        display: grid;
+        justify-content: center;
+        margin-top: 30px;
+        gap: 30px;
+    }
+}
+
+.contactMeText{
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 650px) {
+    .contactMeText{
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    button {
+        width: 40%; 
+    }
+}
